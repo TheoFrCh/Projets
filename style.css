@@ -1,0 +1,88 @@
+        body {
+            background-repeat: no-repeat;
+            background-size: 30%;
+        }
+        header {
+            background-color: rgb(42, 184, 194);
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: unset ;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: rgb(255, 0, 0);
+        }
+        h1 {
+            color: goldenrod;
+            font-size: 40px;
+            text-decoration: underline overline;
+            text-align: center;
+        }
+        
+        .prenom {
+            font-weight: bold;
+        }
+
+        .nom {
+            font-size: 30px;
+            font-style: italic;
+            align-self: center;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            background-color: rgb(184, 184, 184);
+            color: rgb(0, 0, 0);
+            }
+
+
+        img{
+            border-radius: 15px;
+            margin-left: auto;
+            
+        }
+
+        main {color: blue;
+        background-color: ivory;}
+        
+        table{
+            width: 50%;
+            border: green;
+            border-style: solid;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        td { 
+            border-width:2px;
+            border-style:solid; 
+            border-color: springgreen;
+            width:50%;
+            }
+            
+.exp {font-size: 25px;
+font-weight: bold;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+text-decoration: underline overline;}
+
+       #comphob {
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: space-evenly;
+       }
+   
+        
+        footer {
+            background-color: rgb(164, 130, 179);
+            color: green;}
+            
+/*-------------------------------Fin de la page index-----------------------------------*/
+
+#evojv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-------------------------------Fin de la page Hobbies-----------------------------------*/
+
