@@ -1,5 +1,7 @@
 <?php
-include 'header.php';
+$metaDescription = "Voici le site servant de support à mon CV";
+$metaTitle = "CV Théo";
+require 'header.php';
 ?>
 <main>
 <h1>Les jeux vidéos</h1>

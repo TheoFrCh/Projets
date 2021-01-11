@@ -1,5 +1,7 @@
 <?php
-include 'header.php';
+$metaDescription = "Voici le site servant de support à mon CV";
+$metaTitle = "CV Théo";
+require 'header.php';
 ?>
 <h1>Contact</h1>
 <form method="POST" action="https://httpbin.org/post">
@@ -28,7 +30,7 @@ include 'header.php';
 
     <p>
         <textarea name="Message" id="Msg" cols="40" rows="20" placeholder="Inserez un commentaire"></textarea>
-        <button type="submit" value="Envoyer">Envoyer </button>
+        <button type="submit" value="Envoyer">Envoyer</button>
     </p>
 
 

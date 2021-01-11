@@ -1,5 +1,7 @@
 <?php
-include 'header.php';
+$metaDescription = "Voici le site servant de support à mon CV";
+$metaTitle = "CV Théo";
+require 'header.php';
 ?>
 <main>
     <h1 id="CV">CV</h1>
@@ -50,6 +52,3 @@ include 'header.php';
         </table>
     </div>
 </main>
-<?php
-include 'footer.php';
-?>
