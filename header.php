@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Théo</title>
+    <title><?=$metaTitle?></title>
+    <meta name="description" content="<?=$metaDescription?>">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -26,11 +27,10 @@
 
 <nav>
 
-    <p><a href="index.html">CV</a></p>
-    <p><a href="Hobbies.html">Hobbies</a></p>
-    <p><a href="contact.html">Contact</a></p>
+    <p><a href="IndexCV.php">CV</a></p>
+    <p><a href="hobbies.php">Hobbies</a></p>
+    <p><a href="contact.php">Contact</a></p>
 
 </nav>
-</body>
-</html>
+
 

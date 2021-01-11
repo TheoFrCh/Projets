@@ -1,6 +1,3 @@
-<html>
-<body>
-
 <footer>
     <h3>Contact</h3>
     <p><a href="mailto:theo.chiron@le-campus-numerique.fr"><img src="Enveloppe.png" height="50" width="50"
