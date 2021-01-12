@@ -4,27 +4,22 @@ $metaTitle = "CV Théo";
 require 'header.php';
 
 
-if (isset($_GET['page'])) {
-    $page = $_GET['page'];
-
+if (isset($_GET ['page'])) {
+    $page = filter_input(INPUT_GET, 'page', FILTER_SANITIZE_STRING);
 
     if ($page == 'acceuil') {
         require 'IndexCV.php';
     }
 
-    if ($page == 'hobbies') {
+    elseif ($page == 'hobbies') {
         require 'hobbies.php';
     }
 
-    if ($page == 'contact') {
+    elseif ($page == 'contact') {
         require 'contact.php';
     }
-    if ($page !='contact'& $page !='hobbies'& $page!='acceuil'){
-        echo "Erreur 404";
+   else {
+    require 'ERREUR404.php';
     }
 }
 require 'footer.php';
-?>
-
-<br>
-<a href="info.php">Informations</a>
