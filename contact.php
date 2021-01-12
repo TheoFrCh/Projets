@@ -5,25 +5,51 @@ $metaTitle = "CV Théo";
 <h1>Contact</h1>
 <form method="POST" action="https://httpbin.org/post">
     <p><u>Commentaire</u></p>
-    <p>
-        <label for="Nom">Votre Nom</label> : <input type="text" name="Nom" id="Nom" maxlength="15"
-                                                    placeholder="Ex : Jean" required>
-    </p>
 
-    <p>Sexe :</p>
-    <label for="Femme">Femme :</label><input type="radio" name="genre" value="Femme" id="Femme" required>
-    <br>
-    <label for="Homme">Homme :</label><input type="radio" name="genre" value="Homme" id="Homme" required>
+    <label for="civilité">Civilité :</label>
+    <select name="sexe" id="civilité">
+        <option value="">--Votre civilité--</option>
+        <option value="Homme">Homme</option>
+        <option value="Femme">Femme</option>
+    </select>
 
     <p>
-        <select name="Region" id="Region" required>
-            <option value="">--Choisissez votre région--</option>
-            <option value="">Nord de la France</option>
-            <option value="">Centre de la France</option>
-            <option value="">Sud de la France</option>
-            <option value="">Outre-Mer</option>
-        </select>
+        <label for="Nom">Votre Nom :</label>
+        <input type="text" name="Nom" id="Nom" minlength="2" maxlength="15"
+               placeholder="Ex : Dupont" required>
     </p>
+
+    <p>
+        <label for="prenom">Votre Prénom :</label>
+        <input type="text" name="prenom" id="prenom" minlength="2" maxlength="15"
+               placeholder="Ex : Jean" required>
+    </p>
+
+    <p>
+
+        <label for="mail">Votre adresse Mail :</label>
+        <input type="email" name="mail" id="mail" minlength="5" maxlength="30"
+        placeholder="exemple@exemple.com">
+
+    </p>
+
+    <p>Raison du contact :</p>
+    <div>
+        <input type="radio" id="propemploi" name="Raison du contact" value="Proposition d'emploi"
+               checked>
+        <label for="propemploi">Proposition d'emploi</label>
+    </div>
+
+    <div>
+        <input type="radio" id="dmdinfo" name="Raison du contact" value="Demande d'information">
+        <label for="dmdinfo">Demande d'informations</label>
+    </div>
+
+    <div>
+        <input type="radio" id="presta" name="Raison du contact" value="Prestation">
+        <label for="presta">Prestations</label>
+    </div>
+
 
     <p>Votre message :</p>
 
