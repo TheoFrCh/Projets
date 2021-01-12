@@ -1,7 +1,6 @@
 <?php
 $metaDescription = "Voici le site servant de support à mon CV";
 $metaTitle = "CV Théo";
-require 'header.php';
 ?>
 <h1>Contact</h1>
 <form method="POST" action="https://httpbin.org/post">
@@ -37,7 +36,3 @@ require 'header.php';
 </form>
 
 </main>
-<?php
-include 'footer.php';
-?>
-

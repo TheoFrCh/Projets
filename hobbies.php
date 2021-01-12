@@ -1,7 +1,6 @@
 <?php
 $metaDescription = "Voici le site servant de support à mon CV";
 $metaTitle = "CV Théo";
-require 'header.php';
 ?>
 <main>
 <h1>Les jeux vidéos</h1>
@@ -12,7 +11,3 @@ frameborder="0"
 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 </main>
-<?php
-include 'footer.php';
-?>
-
