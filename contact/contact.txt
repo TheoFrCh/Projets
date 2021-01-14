@@ -1,0 +1,6 @@
+sexe : Homme
+Nom : hthj
+prenom : trhtr
+mail : bob@bob.fr
+raisoncontact : Demande d'information
+Message : jghj
