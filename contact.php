@@ -1,9 +1,28 @@
 <?php
 $metaDescription = "Voici le site servant de support à mon CV";
 $metaTitle = "CV Théo";
+$filename = 'C:\Users\Utilisateur\Desktop\Mes projets\contact\contact.txt';
+$sexe=filter_input(INPUT_POST,'sexe');
+$Nom=filter_input(INPUT_POST, 'Nom');
+$prenom=filter_input(INPUT_POST, 'prenom');
+$mail=filter_input(INPUT_POST, 'mail');
+$raisoncontact=filter_input(INPUT_POST, 'raisoncontact');
+$Message=filter_input(INPUT_POST, 'Message');
+
+$formulaire=array(
+    'sexe : '. $sexe . PHP_EOL,
+    'Nom : '. $Nom . PHP_EOL,
+    'prenom : '.$prenom . PHP_EOL,
+    'mail : '.$mail . PHP_EOL,
+    'raisoncontact : '.$raisoncontact . PHP_EOL,
+    'Message : '.$Message . PHP_EOL,
+);
+
+file_put_contents($filename,$formulaire);
+
 ?>
 <h1>Contact</h1>
-<form method="POST" action="https://httpbin.org/post">
+<form method="POST" action="http://projets/index.php/?page=contact">
     <p><u>Commentaire</u></p>
 
     <label for="civilité">Civilité :</label>
@@ -16,13 +35,13 @@ $metaTitle = "CV Théo";
     <p>
         <label for="Nom">Votre Nom :</label>
         <input type="text" name="Nom" id="Nom" minlength="2" maxlength="15"
-               placeholder="Ex : Dupont" required>
+               placeholder="Ex : Dupont" >
     </p>
 
     <p>
         <label for="prenom">Votre Prénom :</label>
         <input type="text" name="prenom" id="prenom" minlength="2" maxlength="15"
-               placeholder="Ex : Jean" required>
+               placeholder="Ex : Jean" >
     </p>
 
     <p>
@@ -35,18 +54,18 @@ $metaTitle = "CV Théo";
 
     <p>Raison du contact :</p>
     <div>
-        <input type="radio" id="propemploi" name="Raison du contact" value="Proposition d'emploi"
+        <input type="radio" id="propemploi" name="raisoncontact" value="Proposition d'emploi"
                checked>
         <label for="propemploi">Proposition d'emploi</label>
     </div>
 
     <div>
-        <input type="radio" id="dmdinfo" name="Raison du contact" value="Demande d'information">
+        <input type="radio" id="dmdinfo" name="raisoncontact" value="Demande d'information">
         <label for="dmdinfo">Demande d'informations</label>
     </div>
 
     <div>
-        <input type="radio" id="presta" name="Raison du contact" value="Prestation">
+        <input type="radio" id="presta" name="raisoncontact" value="Prestation">
         <label for="presta">Prestations</label>
     </div>
 
@@ -60,5 +79,3 @@ $metaTitle = "CV Théo";
 
 
 </form>
-
-</main>
