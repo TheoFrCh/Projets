@@ -27,9 +27,9 @@
 
 <nav>
 
-    <p><a href="http://projets/index.php/?page=acceuil">CV</a></p>
-    <p><a href="http://projets/index.php/?page=hobbies">Hobbies</a></p>
-    <p><a href="http://projets/index.php/?page=contact">Contact</a></p>
+    <p><a href="index.php?page=acceuil">CV</a></p>
+    <p><a href="index.php?page=hobbies">Hobbies</a></p>
+    <p><a href="index.php?page=contact">Contact</a></p>
 
 </nav>
 
